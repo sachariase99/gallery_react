@@ -20,6 +20,7 @@ import Partnership from '../images/Goal-Partnership.png';
 import Global from '../images/Global-Goals.png';
 
 function Gallery() {
+  // Array med billed-URL'er
   const images = [
     Poverty,
     Hunger,
@@ -39,15 +40,17 @@ function Gallery() {
     Institutions,
     Partnership,
     Global,
-    // Add more image URLs here...
+    // Tilføj flere billed-URL'er her...
   ];
 
+  // Brug af brugerdefineret hook til gallerifunktionalitet
   const { selectedImage, showGallery, handleClick, handleBackToGallery } =
     useGallery();
 
   return (
     <div className='flex justify-center items-center h-[100vh]'>
       {showGallery ? (
+        // Gallerivisning
         <div className="grid grid-cols-6 max-w-[1000px] m-auto gap-2">
           {images.map((image, index) => (
             <img
@@ -60,6 +63,7 @@ function Gallery() {
           ))}
         </div>
       ) : (
+        // Udvidet visning af enkelt billede
         <div className="enlarged-image">
           <img
             src={selectedImage}
