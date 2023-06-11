@@ -1,9 +1,14 @@
 import React from 'react'
-import { Gallery } from "./components";
+import { Gallery, GalleryChanger } from "./components";
 
 const App = () => (
-  <div className='bg-black h-[100vh]'>
-    <Gallery />
+  <div>
+    <div className='bg-black h-[100vh]'>
+      <Gallery />
+    </div>
+    <div className='bg-black h-[100vh]'>
+      <GalleryChanger />
+    </div>
   </div>
 )
 

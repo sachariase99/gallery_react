@@ -53,7 +53,7 @@ function Gallery() {
             <img
               key={index}
               src={image}
-              alt={`Image ${index + 1}`}
+              alt={`Small ${index + 1}`}
               onClick={() => handleClick(image)}
               className='w-[100%] cursor-pointer transition duration-150 ease-out hover:ease-in hover:scale-105 grayscale hover:grayscale-0'
             />
@@ -63,7 +63,7 @@ function Gallery() {
         <div className="enlarged-image">
           <img
             src={selectedImage}
-            alt="Enlarged Image"
+            alt="Enlarged"
             onClick={handleBackToGallery}
             className='w-[100%] cursor-pointer'
           />
