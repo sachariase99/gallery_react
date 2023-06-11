@@ -20,8 +20,8 @@ const GalleryChanger = () => {
     };
 
     return (
-        <div className="flex justify-center items-center h-[100vh]">
-            <div className="w-[1000px] grid grid-cols-4 grid-rows-2 gap-3 text-white cursor-pointer">
+        <div className="flex justify-center items-center md:h-[100vh]">
+            <div className="w-[1000px] grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 gap-3 text-white cursor-pointer">
                 <div className="div1 col-span-2 row-span-2">
                     <img className="w-[100%] cursor-default" src={bigImage} alt="Selected" />
                 </div>

@@ -48,10 +48,10 @@ function Gallery() {
     useGallery();
 
   return (
-    <div className='flex justify-center items-center h-[100vh]'>
+    <div className='flex justify-center items-center lg:h-[100vh]'>
       {showGallery ? (
         // Gallerivisning
-        <div className="grid grid-cols-6 max-w-[1000px] m-auto gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 max-w-[1000px] m-auto gap-2">
           {images.map((image, index) => (
             <img
               key={index}
